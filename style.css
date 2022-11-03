@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ef0a80;
+}
+.wrapper{
+    background: #fff;
+    width: 450px;
+    border-radius: 10px;
+}
+.wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+.Calendar ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.current-date{
+    font-size: 1.45rem;
+    font-weight: bold
+}
+.icons span{
+    
+    height: 38px;
+    width: 38px;
+    color: #878787;
+    font-size: 1.9rem;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 38px;
+    background: #f2f2f2;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: -1;
+}
+.icons span :hover{
+    background: #ef0a8082;
+}
+.Calendar{
+    padding: 20px;
+}
+.weeks li{
+    font-weight: 900;
+    font-size: large;
+    color: rgb(135, 16, 16);
+    
+}
+.days{
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #19030e9c;
+}
+.days li{
+    margin-top: 30px;
+    cursor: pointer;
+    z-index: 1;
+    
+    
+}
+.Calendar ul li{
+    width: calc(100%/7);
+    position: relative;
+}
+.Calendar .days li::before{
+    position: relative;
+    content:"";
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background: #f2f2f2;
+    border-radius: 50%;
+}
+.days li:hover{
+    background: #ef0a8082;
+}
+.inactive{
+    color: rgba(170, 170, 170, 0.623);
+    
+}
+
